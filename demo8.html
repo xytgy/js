@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>我是原本的标题</h1>
+    <p>我是原本的内容。</p>
+
+    <button onclick="boom()">点击我</button>
+
+    <!-- document.write方法会覆盖整个页面的内容，因此在页面加载完成后使用它会导致之前的内容被替换掉。 -->
+    <script>
+        function boom() {
+            // 注意：当按钮被点击时，页面已经加载完成了
+            document.write("<h1>哎呀，之前的都没了！</h1>");
+        }
+    </script>
+</body>
+</html>
